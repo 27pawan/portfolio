@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 10%;
+            min-height: 60vh;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 85vh;
+        }
+
+        .home h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .home span {
+            color: #38bdf8;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #cbd5e1;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 25px;
+            margin-top: 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            flex: 1 1 200px;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #38bdf8;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .home h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>MyPortfolio</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <h1>Hello, I'm <span>Pawan Reddy</span></h1>
+    <h2>Web Developer</h2>
+    <p>Welcome to my personal portfolio website.</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hi, I'm a passionate Web Developer who transforms creative ideas into modern digital experiences.
+        I specialize in building responsive, visually appealing, and user-friendly websites using HTML, CSS, and JavaScript.
+        I love exploring new technologies, solving challenges, and turning innovative concepts into reality.
+        My goal is to create impactful web experiences through creativity, clean code, and continuous learning.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">Python</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Personal Portfolio Website
+                Welcome to my digital space, where creativity meets technology! I'm a passionate Web Developer who loves turning ideas into beautiful, interactive, and meaningful digital experiences.
+                Every line of code I write is an opportunity to create something unique, and every project is a step toward innovation.
+                Explore my portfolio, discover my skills, and see how I transform imagination into reality through web development.
+                Let's build something amazing together!
+            </p>
+        </div>
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Online Shopping Website
+                Online Shopping Website is a modern e-commerce platform designed to provide customers with a smooth, convenient, and enjoyable shopping experience.
+                It allows users to explore products, view detailed information, add items to their shopping cart, and shop online with ease.
+                The website focuses on attractive design, easy navigation, and a user-friendly interface to make online shopping simple and efficient.
+            </p>
+        </div>
+        <div class="card">
+            <h3>Project 3</h3>
+            <p>
+                Student Management System is a smart and efficient web-based application designed to simplify the management of student information.
+                It helps educational institutions organize student records, manage attendance, track academic performance, and maintain essential details in one place.
+                With a user-friendly interface and organized features, this system makes student data management easier, faster, and more effective.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio | All Rights Reserved</p>
+</footer>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit",
+        function(event) {
+            event.preventDefault();
+            alert("Thank you for contacting me!");
+            this.reset();
+        }
+    );
+</script>
+</body>
+</html>

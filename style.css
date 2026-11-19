@@ -1,0 +1,175 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0b0b18;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: #111122;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo span, span {
+  color: #a855f7;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+nav a:hover {
+  color: #a855f7;
+}
+
+section {
+  padding: 90px 8%;
+  text-align: center;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 55px;
+  margin: 15px 0;
+}
+
+.hero-content h2 {
+  font-size: 30px;
+}
+
+.hero-content p {
+  max-width: 550px;
+  color: #bbb;
+  margin: 20px 0;
+  line-height: 1.7;
+}
+
+.btn {
+  display: inline-block;
+  background: #a855f7;
+  color: white;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #7e22ce;
+}
+
+.heading {
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+#about p {
+  max-width: 700px;
+  margin: auto;
+  color: #bbb;
+  line-height: 1.8;
+}
+
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skills div, .project-card {
+  background: #17172b;
+  padding: 30px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.skills div:hover, .project-card:hover {
+  transform: translateY(-8px);
+  background: #24203b;
+}
+
+.project-card p {
+  color: #bbb;
+  margin: 15px 0;
+}
+
+.project-card a {
+  color: #a855f7;
+  text-decoration: none;
+}
+
+form {
+  max-width: 550px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 15px;
+  border: 1px solid #333;
+  background: #17172b;
+  color: white;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111122;
+  color: #aaa;
+}
+
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .skills, .projects {
+    grid-template-columns: 1fr;
+  }
+}
